@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: Raleway;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.header {
+    background-image: url(/Assets/img/header.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5vw;
+}
+
+.logo img {
+    width: 154px;
+    height: 58px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    margin: 0 2vw;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav,
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before,
+.title,
+.button1 {
+    transition: all 2s;
+}
+
+nav ul li a:hover {
+    color: #7e6e6e;
+}
+
+.nav-bar ul li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #7e6e6e;
+    height: 3px;
+}
+
+.nav-barul li a:hover:after {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    margin-top: 27vh;
+    padding-left: 3.5vw;
+    padding-bottom: 50vh;
+}
+
+.title h4 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 92px;
+}
+
+.title h6 {
+    font-size: 25px;
+    line-height: 35px;
+    padding-bottom: 15px;
+}
+
+.button1 {
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    background: #E2BA7E;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.button1 h6 a {
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+table tr td {
+    padding: 7px 3px;
+}
+
+.image {
+    float: left;
+    margin-right: 4vw;
+}
+
+.img1 {
+    width: 275px;
+    height: 165px;
+}
+
+.img2 {
+    width: 300px;
+    height: 344px;
+}
+
+.first {
+    margin: 1vh 1vw 15vh 8vw;
+}
+
+.desc {
+    margin: 5vh 0;
+}
+
+.desc h4 {
+    font-family: 'Nunito-Sans', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color: #7e6e6e;
+}
+
+.desc p {
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.button2 {
+    position: absolute;
+    width: 85px;
+    height: 30px;
+    background: #E2BA7E;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+.button2 h6 a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+.image2 {
+    float: right;
+    margin-right: 4vw;
+}
+
+.sec {
+    margin: 5vh 1vw 15vh 8vw;
+}
+
+
+/*footer*/
+
+.footer {
+    width: 100vw;
+    height: 65vh;
+    background-color: black;
+}
+
+.footer img {
+    display: block;
+    margin: 5vh auto 10vh auto;
+    opacity: 0.7;
+}
+
+.Tf {
+    margin: 5vh 0 0 3vw;
+    opacity: 0.7;
+}
+
+.Tf h4 {
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+}
+
+.Tf h6 {
+    font-size: 14;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.sosmed {
+    width: 185px;
+    height: 30px;
+}
+
+.copy {
+    justify-content: center;
+    margin-top: 6vh;
+}
+
+.text {
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    opacity: 0.7;
+}
+
+#Last {
+    margin-bottom: 20vh;
+}
+
+.gallery {
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.gallery h4 {
+    font-family: 'Nunito-Sans', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color: #7e6e6e;
+}
+
+.gallery h5 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 3vh 0;
+}
+
+.gT {
+    margin: 0 auto;
+}
+
+.gT tr td img {
+    height: 500px;
+    width: 350px;
+}
+
+.event {
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.event h4 {
+    font-family: 'Nunito-Sans', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    color: #7e6e6e;
+}
+
+.event h5 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 3vh 0;
+}
+
+.vT {
+    margin: 0 auto;
+}
+
+.vT tr td img {
+    height: 350px;
+    width: 550px;
+    padding: 20px;
+}
+
+@media screen and(min-device-width:1200px) and(max-device-width:1600px) {
+    .gT tr td img {
+        height: 50%;
+        width: 50%;
+    }
+    .vT tr td img {
+        height: 50%;
+        width: 50%;
+        padding: 20px;
+    }
+}
